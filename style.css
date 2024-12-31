@@ -1,0 +1,111 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00aaff, #005f80);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #e6f7ff;
+    margin-top: 40px;
+    text-transform: capitalize;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 12px 0;
+    font-size: 1.1rem;
+}
+
+li:before {
+    content: "• ";
+    color: #00aaff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00324e;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #a3d0d9;
+    border-top: 1px solid #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Эффекты на ссылки */
+a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Анимация при прокрутке страницы */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    section {
+        padding: 15px;
+    }
+    li {
+        font-size: 1rem;
+    }
+}
